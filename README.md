@@ -20,25 +20,25 @@
 
 **Data:** The raw data was provided by [365 Data Science](hhtps://365datascience.com)
 
-### Data Preprocessing
+## Data Preprocessing
 Exploring the descriptive statistics of the variables allowed me to make 3 key observations:
 1. There were missing values.
 2. One variable ('Model') had 312 unique entries.
 3. The important variables were: Brand, Mileage, Engine Volume and Year of Production.
 
 I was then able to drop the missing value entries before moving on to further explore the data.
-### Exploratory Data Analysis
-#### Exploring the Probability Distribution Functions (PDFs)
+## Exploratory Data Analysis
+### Exploring the Probability Distribution Functions (PDFs)
 * Analysis of the PDFs revealed that Price, Mileage, Engine Volume and Year of production all contained outliers.
 * After this analysis I took the following action:
   * Removed the top 1% of observations for Price and Mileage
   * Removed observations >6.5 for Engine Volume (research suggested that Engine Volumes above 6.5L are rare and that 99.9 had been used when there was no entry)
   * Removed the bottom 1% of Year of Production
-#### Checking the Ordinary Least Squares Assumptions
+### Checking the Ordinary Least Squares Assumptions
 * Checking the linearity assumption revealed that:
  1. Price did not have a linear relationship with the key varables.
 
-![Linearity scatter plot](/Images/Linearity scatter plot.png)
+![Linearity scatter plot](/master/Images/Linearity scatter plot.png)
 
 Thus, I performed a log transformation of Price: 
 
@@ -46,7 +46,7 @@ Thus, I performed a log transformation of Price:
 
 2. Year was too correlated with other variables (Multicollinearity existed) and thus the 'Year' variable was dropped.
 
-#### Create Dummy Variables
+### Create Dummy Variables
 I created dummy variables so that categorical variables could be included in the regression
 
 ## Model Building and Testing
