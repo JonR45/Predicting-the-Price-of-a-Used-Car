@@ -13,7 +13,7 @@
   * Creative Thinking
   * Domain knowledge
 
-## Code, Languages and Packages Used
+## Languages and Packages Used
 **Python Version:** 3.7
 
 **Packages:** numpy, pandas, statsmodels, matplotlib, scikit-learn, seaborn
@@ -35,7 +35,7 @@ I was then able to drop the missing value entries before moving on to further ex
   * Removed observations >6.5 for Engine Volume (research suggested that Engine Volumes above 6.5L are rare and that 99.9 had been used when there was no entry)
   * Removed the bottom 1% of Year of Production
 ### Checking the Ordinary Least Squares Assumptions
-* Checking the linearity assumption revealed that:
+Checking the linearity assumption revealed that:
  1. Price did not have a linear relationship with the key varables)
 
 ![Linearity scatter plot](https://github.com/JonR45/Predicting-the-Price-of-a-Used-Car/blob/master/Images/Linearity%20scatter%20plot.png)
