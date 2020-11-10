@@ -13,7 +13,7 @@
   * Creative Thinking
   * Domain knowledge
 
-### Code, Languages and Packages Used
+## Code, Languages and Packages Used
 **Python Version:** 3.7
 
 **Packages:** numpy, pandas, statsmodels, matplotlib, scikit-learn, seaborn
@@ -35,20 +35,45 @@ I was then able to drop the missing value entries before moving on to further ex
   * Removed observations >6.5 for Engine Volume (research suggested that Engine Volumes above 6.5L are rare and that 99.9 had been used when there was no entry)
   * Removed the bottom 1% of Year of Production
 #### Checking the Ordinary Least Squares Assumptions
-* Checking the linearity assumption revealed that price did not have a linear relationship with the key varables: 
+* Checking the linearity assumption revealed that:
+ 1. Price did not have a linear relationship with the key varables.
 
-![Linearity scatter plot](Images/Linearity scatter plot.png)
+![Linearity scatter plot](/Images/Linearity scatter plot.png)
 
 Thus, I performed a log transformation of Price: 
 
+![Price transformed scatter plot](/Images/Log Price scatter (price transformed).png)
 
+2. Year was too correlated with other variables (Multicollinearity existed) and thus the 'Year' variable was dropped.
 
-### Model Building
-Info about the model
+#### Create Dummy Variables
+I created dummy variables so that categorical variables could be included in the regression
 
-### Model Performance
-Error rates, accuracy and other information about the predictions
+## Model Building and Testing
+To build the model I did the following:
+1. Declared the inputs and targets
+2. Scaled the data
+3. Split the data into tran and test sets with a test set of 20%.
+4. Created the multiple linear regression
+5. Checked and interpretated the results. This included:
+   1. Plotting the predicted values of the regression against the obsered values.
+   2. Plotting the residuals and checking  for anomalies
+   3. Finding the R squared, weights and bias.
+6. Tested the Model
 
-### Results and Conclusions
-Notes about real-world usage of the model
-Link to Jupyter Notebook
+## Model Performance
+![Test targets vs predicted targets](/Images/Test targets vs predicted targets.png)
+
+* The model is very good at predicting higher prices but not quite so good at predicting lower prices.
+* The 25th, 50th and 75th percentile show that the predictions are reasonably close. 
+
+## Summary
+* The model is ok but can be improved. 
+* It is likely missing an important factor which drives the price of a used car lower. 
+* It may be the model of the car which was removed at the beginning of the analysis but it could also be down to information not provided, such as whether or not there is any damage to the car and the severity of it, how many services and/or replaced parts the car has had, how many previous owners.
+
+### How to Improve the Model
+1. Use a different set of variables
+2. Remove a bigger part of the outliers
+3. Use differerent kinds of transformations
+4. Seek more information about the car
