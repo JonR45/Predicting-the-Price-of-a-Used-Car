@@ -38,7 +38,7 @@ I was then able to drop the missing value entries before moving on to further ex
 * Checking the linearity assumption revealed that:
  1. Price did not have a linear relationship with the key varables)
 
-![Linearity scatter plot](/master/Images/Linearity scatter plot.png?raw=true "Linearity scatter plot.png")
+![Linearity scatter plot](Images/Linearity scatter plot.png?raw=true "Linearity scatter plot.png")
 
 Thus, I performed a log transformation of Price: 
 
