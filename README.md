@@ -15,7 +15,10 @@
 
 ### Code, Languages and Packages Used
 **Python Version:** 3.7
+
 **Packages:** numpy, pandas, statsmodels, matplotlib, scikit-learn, seaborn
+
+**Data:** The raw data was provided by [365 Data Science](hhtps://365datascience.com)
 
 ### Data Preprocessing
 Exploring the descriptive statistics of the variables allowed me to make 3 key observations:
@@ -23,8 +26,7 @@ Exploring the descriptive statistics of the variables allowed me to make 3 key o
 2. One variable ('Model') had 312 unique entries.
 3. The important variables were: Brand, Mileage, Engine Volume and Year of Production.
 
-I was then able to identify and deal with missing values; missing values constituted <5% of the data, thus these entries were dropped)
-
+I was then able to drop the missing value entries before moving on to further explore the data.
 ### Exploratory Data Analysis
 #### Exploring the Probability Distribution Functions (PDFs)
 * Analysis of the PDFs revealed that Price, Mileage, Engine Volume and Year of production all contained outliers.
@@ -34,6 +36,10 @@ I was then able to identify and deal with missing values; missing values constit
   * Removed the bottom 1% of Year of Production
 #### Checking the Ordinary Least Squares Assumptions
 * Checking the linearity assumption revealed that price did not have a linear relationship with the key varables: 
+
+![Linearity scatter plot](Images/Linearity scatter plot.png)
+
+Thus, I performed a log transformation of Price: 
 
 
 
