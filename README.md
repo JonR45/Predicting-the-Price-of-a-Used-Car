@@ -38,7 +38,7 @@ I was then able to drop the missing value entries before moving on to further ex
 * Checking the linearity assumption revealed that:
  1. Price did not have a linear relationship with the key varables)
 
-![Linearity scatter plot](https://github.com/JonR45/Predicting-the-Price-of-a-Used-Car/blob/master/Images/Linearity%20scatter%20plot.png")
+![Linearity scatter plot](https://github.com/JonR45/Predicting-the-Price-of-a-Used-Car/blob/master/Images/Linearity%20scatter%20plot.png)
 
 Thus, I performed a log transformation of Price: 
 
@@ -62,11 +62,13 @@ To build the model I did the following:
 6. Tested the Model
  1. Made the data easier to compare and interpreted the results
 
-## Model Performance
+## Model Performance and Analysis
 ![Test targets vs predicted targets](https://github.com/JonR45/Predicting-the-Price-of-a-Used-Car/blob/master/Images/Test%20targets%20vs%20predicted%20targets.png)
 
 * The model is very good at predicting higher prices but not quite so good at predicting lower prices.
-* The 25th, 50th and 75th percentile show that the predictions are reasonably close. 
+* There were very few predictions dramatically dar off the targets.
+* The predictions tend to be slightly higher than the targets.
+* The descriptive statistics provide more evidence that the model is reasonably accurate; the 25th, 50th and 75th percentile show that the predictions are reasonably close. 
 
 ## Summary
 * The model is ok but can be improved; it is likely missing an important factor which drives the price of a used car lower. 
