@@ -47,7 +47,7 @@ Thus, I performed a log transformation of Price:
 
 2. Year was too highly correlated with other variables (Multicollinearity existed) and thus the 'Year' variable was dropped.
 
-### Create Dummy Variables
+### Dummy Variables
 I created dummy variables so that categorical variables could be included in the regression.
 
 ## Model Building and Testing
