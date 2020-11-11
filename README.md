@@ -1,4 +1,5 @@
 # Predicting the Price of a Used Car
+![Predicting the price of a used car project banner](https://github.com/JonR45/Predicting-the-Price-of-a-Used-Car/blob/master/Images/Project%20banner%20-%20Predicting%20the%20Price%20of%20a%20Used%20Car.png)
 ## Project Overview
 * The goal of the project was to create a model that was able to accurately predict the price of used cars based on their specifications; the project required skills in the following areas: 
   * Machine Learning (Multiple Linear Regression)
