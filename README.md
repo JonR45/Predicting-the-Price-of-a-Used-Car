@@ -6,10 +6,10 @@
   * Data Wrangling
   * Data Analysis
   * Data Visualisation
-  * Statistical analysis
+  * Statistical Analysis
   * Problem Solving
   * Creative Thinking
-  * Domain knowledge
+  * Domain Knowledge
 * This project was completed as part of coursework for [The 365 Data Scicence Program](https://365datascience.com)
 * Full project notebook: [Predicting the Price of a Used Car Jupyter Notebook](https://github.com/JonR45/Predicting-the-Price-of-a-Used-Car/blob/master/ML%20Project%20—%20Predicting%20the%20Price%20of%20a%20Used%20Car.ipynb)
 
@@ -36,7 +36,7 @@ I was then able to drop the missing value entries before moving on to further ex
   * Removed the bottom 1% of Year of Production
 ### Checking the Ordinary Least Squares Assumptions
 Checking the linearity assumption revealed that:
- 1. Price did not have a linear relationship with the key varables)
+ 1. Price did not have a linear relationship with the key varables
 
 ![Linearity scatter plot](https://github.com/JonR45/Predicting-the-Price-of-a-Used-Car/blob/master/Images/Linearity%20scatter%20plot.png)
 
@@ -44,7 +44,7 @@ Thus, I performed a log transformation of Price:
 
 ![Price transformed scatter plot](https://github.com/JonR45/Predicting-the-Price-of-a-Used-Car/blob/master/Images/Log%20Price%20scatter%20(price%20transformed).png)
 
-2. Year was too correlated with other variables (Multicollinearity existed) and thus the 'Year' variable was dropped.
+2. Year was too highly correlated with other variables (Multicollinearity existed) and thus the 'Year' variable was dropped.
 
 ### Create Dummy Variables
 I created dummy variables so that categorical variables could be included in the regression.
