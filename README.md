@@ -17,7 +17,7 @@
 ## Languages and Libraries Used
 **Python Version:** 3.7
 
-**Packages:** numpy, pandas, statsmodels, matplotlib, scikit-learn, seaborn
+**Libraries:** numpy, pandas, statsmodels, matplotlib, scikit-learn, seaborn
 
 **Data:** The raw data was provided by [365 Data Science](https://365datascience.com)
 
