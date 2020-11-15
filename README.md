@@ -11,7 +11,7 @@
   * Problem Solving
   * Creative Thinking
   * Domain Knowledge
-* This project was completed as part of coursework for [The 365 Data Scicence Program](https://365datascience.com)
+* This project was completed as part of coursework for [The 365 Data Science Program](https://365datascience.com)
 * Full project notebook: [Predicting the Price of a Used Car Jupyter Notebook](https://github.com/JonR45/Predicting-the-Price-of-a-Used-Car/blob/master/ML%20Project%20—%20Predicting%20the%20Price%20of%20a%20Used%20Car.ipynb)
 
 ## Languages and Libraries Used
